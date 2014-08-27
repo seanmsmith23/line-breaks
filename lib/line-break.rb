@@ -10,7 +10,7 @@ def convert_file(file_out, file_in, length=80)
   to_add = ""
 
   until new_content == ""
-    string = new_content.slice!(0,20)
+    string = new_content.slice!(0,length)
     if string[length-1] == " "
       to_add << (string + "\n")
     else
