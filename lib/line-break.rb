@@ -1,7 +1,7 @@
 require 'pp'
 require 'pry'
 
-def convert_file(file_out, file_in, length)
+def convert_file(file_out, file_in, length=80)
   file = File.open(file_in, 'r')
   content = file.read
   file.close
@@ -30,7 +30,7 @@ def convert_file(file_out, file_in, length)
 
 end
 
-convert_file('/Users/seansmith/gSchoolWork/warmups/line-breaks/data/awesome-sauce-test.txt', '/Users/seansmith/gSchoolWork/warmups/line-breaks/data/awesome-sauce.txt', 20)
+convert_file('/Users/seansmith/gSchoolWork/warmups/line-breaks/data/awesome-sauce-test.txt', '/Users/seansmith/gSchoolWork/warmups/line-breaks/data/awesome-sauce.txt', 80)
 convert_file('/Users/seansmith/gSchoolWork/warmups/line-breaks/data/I knew them before they were popular.txt','/Users/seansmith/gSchoolWork/warmups/line-breaks/data/I knew them before they were popular-OUTPUT.txt', 80)
-convert_file('/Users/seansmith/gSchoolWork/warmups/line-breaks/data/what!?.txt','/Users/seansmith/gSchoolWork/warmups/line-breaks/data/what!_-OUTPUT.txt', 20)
+convert_file('/Users/seansmith/gSchoolWork/warmups/line-breaks/data/what!?.txt','/Users/seansmith/gSchoolWork/warmups/line-breaks/data/what!_-OUTPUT.txt', 80)
 convert_file('/Users/seansmith/gSchoolWork/warmups/line-breaks/data/test_out', '/Users/seansmith/gSchoolWork/warmups/line-breaks/data/test', 20)
