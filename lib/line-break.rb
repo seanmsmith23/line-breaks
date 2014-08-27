@@ -11,7 +11,6 @@ def convert_file(file_out, file_in, length)
 
   until new_content == ""
     string = new_content.slice!(0,20)
-    p "IS A SPACE? #{string[length-1]}"
     if string[length-1] == " "
       to_add << (string + "\n")
     else
